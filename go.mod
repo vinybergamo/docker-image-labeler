@@ -8,6 +8,7 @@ require (
 	github.com/posener/complete v1.1.1
 	github.com/spf13/pflag v1.0.5
 	github.com/vinybergamo/cli-skeleton v0.0.0-20230730214020-9e02621e2681
+	github.com/mitchellh/cli v1.1.5
 )
 
 require (
@@ -33,7 +34,6 @@ require (
 	github.com/klauspost/compress v1.16.5 // indirect
 	github.com/mattn/go-colorable v0.1.12 // indirect
 	github.com/mattn/go-isatty v0.0.14 // indirect
-	github.com/mitchellh/cli v1.1.5 // indirect
 	github.com/mitchellh/colorstring v0.0.0-20190213212951-d06e56a500db // indirect
 	github.com/mitchellh/copystructure v1.0.0 // indirect
 	github.com/mitchellh/reflectwalk v1.0.0 // indirect
