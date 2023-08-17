@@ -14,7 +14,7 @@ var AppName = "docker-image-labeler"
 var Version string
 
 func main() {
-	os.Exit(1)
+	os.Exit(Run(os.Args[1:]))
 }
 
 func Run(args []string) int {

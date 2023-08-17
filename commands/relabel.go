@@ -85,6 +85,7 @@ func (c *RelabelCommand) AutocompleteFlags() complete.Flags {
 }
 
 func (c *RelabelCommand) Run(args []string) int {
+
 	flags := c.FlagSet()
 	flags.Usage = func() { c.Ui.Output(c.Help()) }
 	if err := flags.Parse(args); err != nil {
@@ -93,7 +94,7 @@ func (c *RelabelCommand) Run(args []string) int {
 		return 1
 	}
 
-	arguments, err := c.ParsedArguments(flag.Args())
+	arguments, err := c.ParsedArguments(flags.Args())
 	if err != nil {
 		c.Ui.Error(err.Error())
 		c.Ui.Error(command.CommandErrorText(c))
